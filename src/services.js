@@ -89,7 +89,8 @@ export const initWeb3Onboard = init({
       id: '0x4',
       token: 'rETH',
       label: 'Rinkeby',
-      rpcUrl: `https://rinkeby.infura.io/v3/${INFURA_ID}`
+      rpcUrl: "https://eth-goerli.alchemyapi.io/v2/Uolw4jJVDGC_WPwjAhV0U9EtHqvvkrsV"
+      // rpcUrl: `https://rinkeby.infura.io/v3/${INFURA_ID}`
     },
     {
       id: '0x38',
