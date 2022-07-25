@@ -119,13 +119,13 @@ export const initWeb3Onboard = init({
       { name: 'Coinbase', url: 'https://wallet.coinbase.com/' },
       { name: 'MetaMask', url: 'https://metamask.io' }
     ],
-    agreement: {
-      version: '1.0.0',
-      termsUrl: 'https://www.blocknative.com/terms-conditions',
-      privacyUrl: 'https://www.blocknative.com/privacy-policy'
-    },
-    gettingStartedGuide: 'https://blocknative.com',
-    explore: 'https://blocknative.com'
+    // agreement: {
+    //   version: '1.0.0',
+    //   termsUrl: 'https://www.blocknative.com/terms-conditions',
+    //   privacyUrl: 'https://www.blocknative.com/privacy-policy'
+    // },
+    // gettingStartedGuide: 'https://blocknative.com',
+    // explore: 'https://blocknative.com'
   },
   accountCenter: {
     desktop: {
@@ -165,20 +165,20 @@ export const initWeb3Onboard = init({
       }
     }
   },
-  apiKey: dappId,
-  notify: {
-    transactionHandler: transaction => {
-      console.log({ transaction })
-      if (transaction.eventCode === 'txPool') {
-        return {
-          // autoDismiss set to zero will persist the notification until the user excuses it
-          autoDismiss: 0,
-          // message: `Your transaction is pending, click <a href="https://rinkeby.etherscan.io/tx/${transaction.hash}" rel="noopener noreferrer" target="_blank">here</a> for more info.`,
-          // or you could use onClick for when someone clicks on the notification itself
-          onClick: () =>
-            window.open(`https://rinkeby.etherscan.io/tx/${transaction.hash}`)
-        }
-      }
-    }
-  }
+  // apiKey: dappId,
+  // notify: {
+  //   transactionHandler: transaction => {
+  //     console.log({ transaction })
+  //     if (transaction.eventCode === 'txPool') {
+  //       return {
+  //         // autoDismiss set to zero will persist the notification until the user excuses it
+  //         autoDismiss: 0,
+  //         // message: `Your transaction is pending, click <a href="https://rinkeby.etherscan.io/tx/${transaction.hash}" rel="noopener noreferrer" target="_blank">here</a> for more info.`,
+  //         // or you could use onClick for when someone clicks on the notification itself
+  //         onClick: () =>
+  //           window.open(`https://rinkeby.etherscan.io/tx/${transaction.hash}`)
+  //       }
+  //     }
+  //   }
+  // }
 })
