@@ -18,59 +18,59 @@ import web3authModule from '@web3-onboard/web3auth'
 // Replace with your DApp's Infura ID
 const INFURA_ID = 'cea9deb6467748b0b81b920b005c10c1'
 
-const dappId = '1730eff0-9d50-4382-a3fe-89f0d34a2070'
+// const dappId = '1730eff0-9d50-4382-a3fe-89f0d34a2070'
 
 const injected = injectedModule()
 const coinbase = coinbaseModule()
 const walletConnect = walletConnectModule()
 
-const portis = portisModule({
-  apiKey: 'b2b7586f-2b1e-4c30-a7fb-c2d1533b153b'
-})
+// const portis = portisModule({
+//   apiKey: 'b2b7586f-2b1e-4c30-a7fb-c2d1533b153b'
+// })
 
-const fortmatic = fortmaticModule({
-  apiKey: 'pk_test_886ADCAB855632AA'
-})
+// const fortmatic = fortmaticModule({
+//   apiKey: 'pk_test_886ADCAB855632AA'
+// })
 
-const torus = torusModule()
-const ledger = ledgerModule()
-const keepkey = keepkeyModule()
+// const torus = torusModule()
+// const ledger = ledgerModule()
+// const keepkey = keepkeyModule()
 
-const gnosis = gnosisModule()
+// const gnosis = gnosisModule()
 
-const trezorOptions = {
-  email: 'test@test.com',
-  appUrl: 'https://www.blocknative.com'
-}
+// const trezorOptions = {
+//   email: 'test@test.com',
+//   appUrl: 'https://www.blocknative.com'
+// }
 
-const trezor = trezorModule(trezorOptions)
+// const trezor = trezorModule(trezorOptions)
 
-const magic = magicModule({
-  // Example api key, may need to be updated when max hits reached
-  // Get one to test with for free from https://magic.link/
-  apiKey: 'pk_live_02207D744E81C2BA',
-  userEmail: localStorage.getItem('magicUserEmail')
-})
+// const magic = magicModule({
+//   // Example api key, may need to be updated when max hits reached
+//   // Get one to test with for free from https://magic.link/
+//   apiKey: 'pk_live_02207D744E81C2BA',
+//   userEmail: localStorage.getItem('magicUserEmail')
+// })
 
-const web3auth = web3authModule({
-  clientId:
-    'DJuUOKvmNnlzy6ruVgeWYWIMKLRyYtjYa9Y10VCeJzWZcygDlrYLyXsBQjpJ2hxlBO9dnl8t9GmAC2qOP5vnIGo'
-})
+// const web3auth = web3authModule({
+//   clientId:
+//     'DJuUOKvmNnlzy6ruVgeWYWIMKLRyYtjYa9Y10VCeJzWZcygDlrYLyXsBQjpJ2hxlBO9dnl8t9GmAC2qOP5vnIGo'
+// })
 
 export const initWeb3Onboard = init({
   wallets: [
     injected,
-    ledger,
+    // ledger,
     coinbase,
-    trezor,
+    // trezor,
     walletConnect,
-    web3auth,
-    gnosis,
-    magic,
-    fortmatic,
-    keepkey,
-    portis,
-    torus
+    // web3auth,
+    // gnosis,
+    // magic,
+    // fortmatic,
+    // keepkey,
+    // portis,
+    // torus
   ],
   chains: [
     {
