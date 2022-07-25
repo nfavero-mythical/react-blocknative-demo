@@ -5,12 +5,22 @@
     "@craco/craco": "^6.4.3",
     "@web3-onboard/coinbase": "^2.0.9",
     "@web3-onboard/injected-wallets": "^2.0.14",
-    "@web3-onboard/walletconnect": "^2.0.7",
     "@web3-onboard/react": "^2.2.4",
-    "ethers": "^5.5.2",
+    "@web3-onboard/walletconnect": "^2.0.7",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "ethers": "^5.6.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
+    "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "util": "^0.12.4",
     "vconsole": "^3.3.4"
   },
   "scripts": {
@@ -27,6 +37,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "cracoConfig": "craco.config.js",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,6 +51,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "webpack": "^5.70.0"
   }
 }

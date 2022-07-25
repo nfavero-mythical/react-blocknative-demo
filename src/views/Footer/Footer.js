@@ -1,5 +1,4 @@
 import React from 'react'
-import { version, dependencies } from '../../../package.json'
 
 import './Footer.css'
 
@@ -9,11 +8,11 @@ const Footer = () => {
     <section className="footer">
       <div className="versioning">
         <span>
-          React Demo version: <i>{version}</i>
+          React Demo version: <i>Version</i>
         </span>
         <span>
           Web3 Onboard React version:{' '}
-          <i>{dependencies['@web3-onboard/react'].slice(1)}</i>
+          {/* <i>{dependencies['@web3-onboard/react'].slice(1)}</i> */}
         </span>
       </div>
       <section className="footer-links">
