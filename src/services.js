@@ -3,17 +3,8 @@ import blocknativeIcon from './icons/blocknative-icon'
 
 import { init } from '@web3-onboard/react'
 import injectedModule from '@web3-onboard/injected-wallets'
-import trezorModule from '@web3-onboard/trezor'
-import ledgerModule from '@web3-onboard/ledger'
 import walletConnectModule from '@web3-onboard/walletconnect'
 import coinbaseModule from '@web3-onboard/coinbase'
-import portisModule from '@web3-onboard/portis'
-import magicModule from '@web3-onboard/magic'
-import fortmaticModule from '@web3-onboard/fortmatic'
-import torusModule from '@web3-onboard/torus'
-import keepkeyModule from '@web3-onboard/keepkey'
-import gnosisModule from '@web3-onboard/gnosis'
-import web3authModule from '@web3-onboard/web3auth'
 
 // Replace with your DApp's Infura ID
 const INFURA_ID = 'cea9deb6467748b0b81b920b005c10c1'
