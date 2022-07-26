@@ -104,8 +104,8 @@ export const initWeb3Onboard = init({
   ],
   appMetadata: {
     name: 'Blocknative Web3-Onboard',
-    icon: blocknativeIcon,
-    logo: blocknativeLogo,
+    icon: '<svg></svg>',
+    // logo: blocknativeLogo,
     description: 'Demo app for Web3-Onboard',
     recommendedInjectedWallets: [
       { name: 'Coinbase', url: 'https://wallet.coinbase.com/' },
