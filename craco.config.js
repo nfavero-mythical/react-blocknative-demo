@@ -2,9 +2,19 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  reactScriptsVersion: "react-scripts" /* (default value) */,
+  // reactScriptsVersion: "react-scripts" /* (default value) */,
   webpack: {
     configure: {
+      module: {
+        rules: [
+          {
+            test: /\.m?js/,
+            resolve: {
+              fullySpecified: false,
+            },
+          },
+        ],
+      },
       resolve: {
         alias: {
           assert: "assert",

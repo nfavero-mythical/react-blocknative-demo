@@ -44,8 +44,8 @@ const App = () => {
   const [{ chains, connectedChain, settingChain }, setChain] = useSetChain()
   const [notifications, customNotification, updateNotify] = useNotifications()
   const connectedWallets = useWallets()
-  const updateAccountCenter = useAccountCenter()
-  const updateLocale = useSetLocale()
+  // const updateAccountCenter = useAccountCenter()
+  // const updateLocale = useSetLocale()
 
   const [web3Onboard, setWeb3Onboard] = useState(null)
 
@@ -298,9 +298,9 @@ const App = () => {
             }`}
             onClick={() => {
               setAccountCenterPosition('topRight')
-              updateAccountCenter({
-                position: 'topRight'
-              })
+              // updateAccountCenter({
+              //   position: 'topRight'
+              // })
             }}
           >
             Top
@@ -313,9 +313,9 @@ const App = () => {
             }`}
             onClick={() => {
               setAccountCenterPosition('bottomRight')
-              updateAccountCenter({
-                position: 'bottomRight'
-              })
+              // updateAccountCenter({
+              //   position: 'bottomRight'
+              // })
             }}
           >
             Bottom
@@ -335,9 +335,9 @@ const App = () => {
           }`}
           onClick={() => {
             setAccountCenterPosition('topLeft')
-            updateAccountCenter({
-              position: 'topLeft'
-            })
+            // updateAccountCenter({
+            //   position: 'topLeft'
+            // })
           }}
         >
           Top Left
@@ -350,9 +350,9 @@ const App = () => {
           }`}
           onClick={() => {
             setAccountCenterPosition('topRight')
-            updateAccountCenter({
-              position: 'topRight'
-            })
+            // updateAccountCenter({
+            //   position: 'topRight'
+            // })
           }}
         >
           Top Right
@@ -365,9 +365,9 @@ const App = () => {
           }`}
           onClick={() => {
             setAccountCenterPosition('bottomRight')
-            updateAccountCenter({
-              position: 'bottomRight'
-            })
+            // updateAccountCenter({
+            //   position: 'bottomRight'
+            // })
           }}
         >
           Bottom Right
@@ -380,9 +380,9 @@ const App = () => {
           }`}
           onClick={() => {
             setAccountCenterPosition('bottomLeft')
-            updateAccountCenter({
-              position: 'bottomLeft'
-            })
+            // updateAccountCenter({
+            //   position: 'bottomLeft'
+            // })
           }}
         >
           Bottom Left
@@ -498,9 +498,9 @@ const App = () => {
                     <button
                       className="bn-demo-button"
                       onClick={e => {
-                        updateLocale(locale === 'es' ? 'en' : 'es')
+                        // updateLocale(locale === 'es' ? 'en' : 'es')
                         setLocale(locale === 'es' ? 'en' : 'es')
-                        updateAccountCenter({ expanded: true })
+                        // updateAccountCenter({ expanded: true })
                         e.stopPropagation()
                       }}
                     >
@@ -518,13 +518,13 @@ const App = () => {
                             ? 'expanded'
                             : 'minimal'
                         })
-                        updateAccountCenter(
-                          accountCenterSize === 'minimal'
-                            ? { minimal: false }
-                            : accountCenterSize === 'normal'
-                            ? { minimal: true, expanded: true }
-                            : { minimal: true, expanded: false }
-                        )
+                        // updateAccountCenter(
+                        //   accountCenterSize === 'minimal'
+                        //     ? { minimal: false }
+                        //     : accountCenterSize === 'normal'
+                        //     ? { minimal: true, expanded: true }
+                        //     : { minimal: true, expanded: false }
+                        // )
                         e.stopPropagation()
                       }}
                     >
